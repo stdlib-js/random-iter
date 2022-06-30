@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/random-iter",
-  "version": "0.0.0",
+  "version": "0.0.6",
   "description": "Pseudorandom number generator iterators.",
   "license": "Apache-2.0",
   "author": {
@@ -141,6 +141,7 @@
     "@stdlib/random-base-triangular": "^0.0.x",
     "@stdlib/random-base-uniform": "^0.0.x",
     "@stdlib/random-base-weibull": "^0.0.x",
+    "@stdlib/string-format": "^0.0.x",
     "@stdlib/symbol-iterator": "^0.0.x",
     "@stdlib/time-now": "^0.0.x",
     "@stdlib/utils-constant-function": "^0.0.x",
