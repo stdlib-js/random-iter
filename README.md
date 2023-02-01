@@ -24,20 +24,30 @@ limitations under the License.
 
 > Pseudorandom number generator (PRNG) iterators.
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/random-iter
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@deno/mod.js';
-```
-
-You can also import the following named exports from the package:
-
-```javascript
-import { arcsine, bernoulli, beta, betaprime, binomial, boxMuller, cauchy, chi, chisquare, cosine, discreteUniform, erlang, exponential, f, frechet, gamma, geometric, gumbel, hypergeometric, improvedZiggurat, invgamma, kumaraswamy, laplace, levy, logistic, lognormal, minstd, minstdShuffle, mt19937, negativeBinomial, normal, pareto1, poisson, randi, randn, randu, rayleigh, t, triangular, uniform, weibull } from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@deno/mod.js';
+var ns = require( '@stdlib/random-iter' );
 ```
 
 #### ns
@@ -114,8 +124,8 @@ The namespace contains the following functions for creating iterator protocol-co
 <!-- eslint no-undef: "error" -->
 
 ```javascript
-import objectKeys from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-keys@deno/mod.js';
-import ns from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@deno/mod.js';
+var objectKeys = require( '@stdlib/utils-keys' );
+var ns = require( '@stdlib/random-iter' );
 
 console.log( objectKeys( ns ) );
 ```
@@ -141,7 +151,7 @@ console.log( objectKeys( ns ) );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
@@ -158,7 +168,7 @@ See [LICENSE][stdlib-license].
 
 ## Copyright
 
-Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
+Copyright &copy; 2016-2023. The Stdlib [Authors][stdlib-authors].
 
 </section>
 
@@ -203,87 +213,87 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/random/iter/arcsine]: https://github.com/stdlib-js/random-iter-arcsine/tree/deno
+[@stdlib/random/iter/arcsine]: https://github.com/stdlib-js/random-iter-arcsine
 
-[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli/tree/deno
+[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli
 
-[@stdlib/random/iter/beta]: https://github.com/stdlib-js/random-iter-beta/tree/deno
+[@stdlib/random/iter/beta]: https://github.com/stdlib-js/random-iter-beta
 
-[@stdlib/random/iter/betaprime]: https://github.com/stdlib-js/random-iter-betaprime/tree/deno
+[@stdlib/random/iter/betaprime]: https://github.com/stdlib-js/random-iter-betaprime
 
-[@stdlib/random/iter/binomial]: https://github.com/stdlib-js/random-iter-binomial/tree/deno
+[@stdlib/random/iter/binomial]: https://github.com/stdlib-js/random-iter-binomial
 
-[@stdlib/random/iter/box-muller]: https://github.com/stdlib-js/random-iter-box-muller/tree/deno
+[@stdlib/random/iter/box-muller]: https://github.com/stdlib-js/random-iter-box-muller
 
-[@stdlib/random/iter/cauchy]: https://github.com/stdlib-js/random-iter-cauchy/tree/deno
+[@stdlib/random/iter/cauchy]: https://github.com/stdlib-js/random-iter-cauchy
 
-[@stdlib/random/iter/chi]: https://github.com/stdlib-js/random-iter-chi/tree/deno
+[@stdlib/random/iter/chi]: https://github.com/stdlib-js/random-iter-chi
 
-[@stdlib/random/iter/chisquare]: https://github.com/stdlib-js/random-iter-chisquare/tree/deno
+[@stdlib/random/iter/chisquare]: https://github.com/stdlib-js/random-iter-chisquare
 
-[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine/tree/deno
+[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine
 
-[@stdlib/random/iter/discrete-uniform]: https://github.com/stdlib-js/random-iter-discrete-uniform/tree/deno
+[@stdlib/random/iter/discrete-uniform]: https://github.com/stdlib-js/random-iter-discrete-uniform
 
-[@stdlib/random/iter/erlang]: https://github.com/stdlib-js/random-iter-erlang/tree/deno
+[@stdlib/random/iter/erlang]: https://github.com/stdlib-js/random-iter-erlang
 
-[@stdlib/random/iter/exponential]: https://github.com/stdlib-js/random-iter-exponential/tree/deno
+[@stdlib/random/iter/exponential]: https://github.com/stdlib-js/random-iter-exponential
 
-[@stdlib/random/iter/f]: https://github.com/stdlib-js/random-iter-f/tree/deno
+[@stdlib/random/iter/f]: https://github.com/stdlib-js/random-iter-f
 
-[@stdlib/random/iter/frechet]: https://github.com/stdlib-js/random-iter-frechet/tree/deno
+[@stdlib/random/iter/frechet]: https://github.com/stdlib-js/random-iter-frechet
 
-[@stdlib/random/iter/gamma]: https://github.com/stdlib-js/random-iter-gamma/tree/deno
+[@stdlib/random/iter/gamma]: https://github.com/stdlib-js/random-iter-gamma
 
-[@stdlib/random/iter/geometric]: https://github.com/stdlib-js/random-iter-geometric/tree/deno
+[@stdlib/random/iter/geometric]: https://github.com/stdlib-js/random-iter-geometric
 
-[@stdlib/random/iter/gumbel]: https://github.com/stdlib-js/random-iter-gumbel/tree/deno
+[@stdlib/random/iter/gumbel]: https://github.com/stdlib-js/random-iter-gumbel
 
-[@stdlib/random/iter/hypergeometric]: https://github.com/stdlib-js/random-iter-hypergeometric/tree/deno
+[@stdlib/random/iter/hypergeometric]: https://github.com/stdlib-js/random-iter-hypergeometric
 
-[@stdlib/random/iter/improved-ziggurat]: https://github.com/stdlib-js/random-iter-improved-ziggurat/tree/deno
+[@stdlib/random/iter/improved-ziggurat]: https://github.com/stdlib-js/random-iter-improved-ziggurat
 
-[@stdlib/random/iter/invgamma]: https://github.com/stdlib-js/random-iter-invgamma/tree/deno
+[@stdlib/random/iter/invgamma]: https://github.com/stdlib-js/random-iter-invgamma
 
-[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy/tree/deno
+[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy
 
-[@stdlib/random/iter/laplace]: https://github.com/stdlib-js/random-iter-laplace/tree/deno
+[@stdlib/random/iter/laplace]: https://github.com/stdlib-js/random-iter-laplace
 
-[@stdlib/random/iter/levy]: https://github.com/stdlib-js/random-iter-levy/tree/deno
+[@stdlib/random/iter/levy]: https://github.com/stdlib-js/random-iter-levy
 
-[@stdlib/random/iter/logistic]: https://github.com/stdlib-js/random-iter-logistic/tree/deno
+[@stdlib/random/iter/logistic]: https://github.com/stdlib-js/random-iter-logistic
 
-[@stdlib/random/iter/lognormal]: https://github.com/stdlib-js/random-iter-lognormal/tree/deno
+[@stdlib/random/iter/lognormal]: https://github.com/stdlib-js/random-iter-lognormal
 
-[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle/tree/deno
+[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle
 
-[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd/tree/deno
+[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd
 
-[@stdlib/random/iter/mt19937]: https://github.com/stdlib-js/random-iter-mt19937/tree/deno
+[@stdlib/random/iter/mt19937]: https://github.com/stdlib-js/random-iter-mt19937
 
-[@stdlib/random/iter/negative-binomial]: https://github.com/stdlib-js/random-iter-negative-binomial/tree/deno
+[@stdlib/random/iter/negative-binomial]: https://github.com/stdlib-js/random-iter-negative-binomial
 
-[@stdlib/random/iter/normal]: https://github.com/stdlib-js/random-iter-normal/tree/deno
+[@stdlib/random/iter/normal]: https://github.com/stdlib-js/random-iter-normal
 
-[@stdlib/random/iter/pareto-type1]: https://github.com/stdlib-js/random-iter-pareto-type1/tree/deno
+[@stdlib/random/iter/pareto-type1]: https://github.com/stdlib-js/random-iter-pareto-type1
 
-[@stdlib/random/iter/poisson]: https://github.com/stdlib-js/random-iter-poisson/tree/deno
+[@stdlib/random/iter/poisson]: https://github.com/stdlib-js/random-iter-poisson
 
-[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi/tree/deno
+[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi
 
-[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn/tree/deno
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
 
-[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu/tree/deno
+[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu
 
-[@stdlib/random/iter/rayleigh]: https://github.com/stdlib-js/random-iter-rayleigh/tree/deno
+[@stdlib/random/iter/rayleigh]: https://github.com/stdlib-js/random-iter-rayleigh
 
-[@stdlib/random/iter/t]: https://github.com/stdlib-js/random-iter-t/tree/deno
+[@stdlib/random/iter/t]: https://github.com/stdlib-js/random-iter-t
 
-[@stdlib/random/iter/triangular]: https://github.com/stdlib-js/random-iter-triangular/tree/deno
+[@stdlib/random/iter/triangular]: https://github.com/stdlib-js/random-iter-triangular
 
-[@stdlib/random/iter/uniform]: https://github.com/stdlib-js/random-iter-uniform/tree/deno
+[@stdlib/random/iter/uniform]: https://github.com/stdlib-js/random-iter-uniform
 
-[@stdlib/random/iter/weibull]: https://github.com/stdlib-js/random-iter-weibull/tree/deno
+[@stdlib/random/iter/weibull]: https://github.com/stdlib-js/random-iter-weibull
 
 <!-- </toc-links> -->
 
