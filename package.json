@@ -38,7 +38,7 @@
   "dependencies": {
     "@stdlib/random-iter-arcsine": "^0.1.0",
     "@stdlib/random-iter-bernoulli": "^0.1.0",
-    "@stdlib/random-iter-beta": "^0.0.7",
+    "@stdlib/random-iter-beta": "^0.1.0",
     "@stdlib/random-iter-betaprime": "^0.1.0",
     "@stdlib/random-iter-binomial": "^0.1.0",
     "@stdlib/random-iter-box-muller": "^0.1.0",
