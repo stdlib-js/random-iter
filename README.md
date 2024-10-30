@@ -35,32 +35,38 @@ limitations under the License.
 
 > Pseudorandom number generator (PRNG) iterators.
 
-<section class="installation">
 
-## Installation
-
-```bash
-npm install @stdlib/random-iter
-```
-
-Alternatively,
-
--   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
--   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
--   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
-
-The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
-
-To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
-
-</section>
 
 <section class="usage">
 
 ## Usage
 
+To use in Observable,
+
 ```javascript
-var ns = require( '@stdlib/random-iter' );
+ns = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@umd/browser.js' )
+```
+
+To vendor stdlib functionality and avoid installing dependency trees for Node.js, you can use the UMD server build:
+
+```javascript
+var ns = require( 'path/to/vendor/umd/random-iter/index.js' )
+```
+
+To include the bundle in a webpage,
+
+```html
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@umd/browser.js"></script>
+```
+
+If no recognized module system is present, access bundle contents via the global scope:
+
+```html
+<script type="text/javascript">
+(function () {
+    window.ns;
+})();
+</script>
 ```
 
 #### ns
@@ -136,10 +142,15 @@ The namespace contains the following functions for creating iterator protocol-co
 
 <!-- eslint no-undef: "error" -->
 
-```javascript
-var roundn = require( '@stdlib/math-base-special-roundn' );
-var mean = require( '@stdlib/stats-base-mean' );
-var iter = require( '@stdlib/random-iter' );
+```html
+<!DOCTYPE html>
+<html lang="en">
+<body>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-roundn@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/stats-base-mean@umd/browser.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-iter@umd/browser.js"></script>
+<script type="text/javascript">
+(function () {
 
 var initialPrice = 100.0;
 var currentPrice = initialPrice;
@@ -174,6 +185,11 @@ console.log( 'Total Return: %d%', roundn( totalReturn, -2 ) );
 console.log( 'Average Daily Return: %d%', roundn( avgReturn, -2 ) );
 console.log( '\nPrice History:' );
 console.log( prices.join( ' → ' ) );
+
+})();
+</script>
+</body>
+</html>
 ```
 
 </section>
@@ -262,87 +278,87 @@ Copyright &copy; 2016-2024. The Stdlib [Authors][stdlib-authors].
 
 <!-- <toc-links> -->
 
-[@stdlib/random/iter/arcsine]: https://github.com/stdlib-js/random-iter-arcsine
+[@stdlib/random/iter/arcsine]: https://github.com/stdlib-js/random-iter-arcsine/tree/umd
 
-[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli
+[@stdlib/random/iter/bernoulli]: https://github.com/stdlib-js/random-iter-bernoulli/tree/umd
 
-[@stdlib/random/iter/beta]: https://github.com/stdlib-js/random-iter-beta
+[@stdlib/random/iter/beta]: https://github.com/stdlib-js/random-iter-beta/tree/umd
 
-[@stdlib/random/iter/betaprime]: https://github.com/stdlib-js/random-iter-betaprime
+[@stdlib/random/iter/betaprime]: https://github.com/stdlib-js/random-iter-betaprime/tree/umd
 
-[@stdlib/random/iter/binomial]: https://github.com/stdlib-js/random-iter-binomial
+[@stdlib/random/iter/binomial]: https://github.com/stdlib-js/random-iter-binomial/tree/umd
 
-[@stdlib/random/iter/box-muller]: https://github.com/stdlib-js/random-iter-box-muller
+[@stdlib/random/iter/box-muller]: https://github.com/stdlib-js/random-iter-box-muller/tree/umd
 
-[@stdlib/random/iter/cauchy]: https://github.com/stdlib-js/random-iter-cauchy
+[@stdlib/random/iter/cauchy]: https://github.com/stdlib-js/random-iter-cauchy/tree/umd
 
-[@stdlib/random/iter/chi]: https://github.com/stdlib-js/random-iter-chi
+[@stdlib/random/iter/chi]: https://github.com/stdlib-js/random-iter-chi/tree/umd
 
-[@stdlib/random/iter/chisquare]: https://github.com/stdlib-js/random-iter-chisquare
+[@stdlib/random/iter/chisquare]: https://github.com/stdlib-js/random-iter-chisquare/tree/umd
 
-[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine
+[@stdlib/random/iter/cosine]: https://github.com/stdlib-js/random-iter-cosine/tree/umd
 
-[@stdlib/random/iter/discrete-uniform]: https://github.com/stdlib-js/random-iter-discrete-uniform
+[@stdlib/random/iter/discrete-uniform]: https://github.com/stdlib-js/random-iter-discrete-uniform/tree/umd
 
-[@stdlib/random/iter/erlang]: https://github.com/stdlib-js/random-iter-erlang
+[@stdlib/random/iter/erlang]: https://github.com/stdlib-js/random-iter-erlang/tree/umd
 
-[@stdlib/random/iter/exponential]: https://github.com/stdlib-js/random-iter-exponential
+[@stdlib/random/iter/exponential]: https://github.com/stdlib-js/random-iter-exponential/tree/umd
 
-[@stdlib/random/iter/f]: https://github.com/stdlib-js/random-iter-f
+[@stdlib/random/iter/f]: https://github.com/stdlib-js/random-iter-f/tree/umd
 
-[@stdlib/random/iter/frechet]: https://github.com/stdlib-js/random-iter-frechet
+[@stdlib/random/iter/frechet]: https://github.com/stdlib-js/random-iter-frechet/tree/umd
 
-[@stdlib/random/iter/gamma]: https://github.com/stdlib-js/random-iter-gamma
+[@stdlib/random/iter/gamma]: https://github.com/stdlib-js/random-iter-gamma/tree/umd
 
-[@stdlib/random/iter/geometric]: https://github.com/stdlib-js/random-iter-geometric
+[@stdlib/random/iter/geometric]: https://github.com/stdlib-js/random-iter-geometric/tree/umd
 
-[@stdlib/random/iter/gumbel]: https://github.com/stdlib-js/random-iter-gumbel
+[@stdlib/random/iter/gumbel]: https://github.com/stdlib-js/random-iter-gumbel/tree/umd
 
-[@stdlib/random/iter/hypergeometric]: https://github.com/stdlib-js/random-iter-hypergeometric
+[@stdlib/random/iter/hypergeometric]: https://github.com/stdlib-js/random-iter-hypergeometric/tree/umd
 
-[@stdlib/random/iter/improved-ziggurat]: https://github.com/stdlib-js/random-iter-improved-ziggurat
+[@stdlib/random/iter/improved-ziggurat]: https://github.com/stdlib-js/random-iter-improved-ziggurat/tree/umd
 
-[@stdlib/random/iter/invgamma]: https://github.com/stdlib-js/random-iter-invgamma
+[@stdlib/random/iter/invgamma]: https://github.com/stdlib-js/random-iter-invgamma/tree/umd
 
-[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy
+[@stdlib/random/iter/kumaraswamy]: https://github.com/stdlib-js/random-iter-kumaraswamy/tree/umd
 
-[@stdlib/random/iter/laplace]: https://github.com/stdlib-js/random-iter-laplace
+[@stdlib/random/iter/laplace]: https://github.com/stdlib-js/random-iter-laplace/tree/umd
 
-[@stdlib/random/iter/levy]: https://github.com/stdlib-js/random-iter-levy
+[@stdlib/random/iter/levy]: https://github.com/stdlib-js/random-iter-levy/tree/umd
 
-[@stdlib/random/iter/logistic]: https://github.com/stdlib-js/random-iter-logistic
+[@stdlib/random/iter/logistic]: https://github.com/stdlib-js/random-iter-logistic/tree/umd
 
-[@stdlib/random/iter/lognormal]: https://github.com/stdlib-js/random-iter-lognormal
+[@stdlib/random/iter/lognormal]: https://github.com/stdlib-js/random-iter-lognormal/tree/umd
 
-[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle
+[@stdlib/random/iter/minstd-shuffle]: https://github.com/stdlib-js/random-iter-minstd-shuffle/tree/umd
 
-[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd
+[@stdlib/random/iter/minstd]: https://github.com/stdlib-js/random-iter-minstd/tree/umd
 
-[@stdlib/random/iter/mt19937]: https://github.com/stdlib-js/random-iter-mt19937
+[@stdlib/random/iter/mt19937]: https://github.com/stdlib-js/random-iter-mt19937/tree/umd
 
-[@stdlib/random/iter/negative-binomial]: https://github.com/stdlib-js/random-iter-negative-binomial
+[@stdlib/random/iter/negative-binomial]: https://github.com/stdlib-js/random-iter-negative-binomial/tree/umd
 
-[@stdlib/random/iter/normal]: https://github.com/stdlib-js/random-iter-normal
+[@stdlib/random/iter/normal]: https://github.com/stdlib-js/random-iter-normal/tree/umd
 
-[@stdlib/random/iter/pareto-type1]: https://github.com/stdlib-js/random-iter-pareto-type1
+[@stdlib/random/iter/pareto-type1]: https://github.com/stdlib-js/random-iter-pareto-type1/tree/umd
 
-[@stdlib/random/iter/poisson]: https://github.com/stdlib-js/random-iter-poisson
+[@stdlib/random/iter/poisson]: https://github.com/stdlib-js/random-iter-poisson/tree/umd
 
-[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi
+[@stdlib/random/iter/randi]: https://github.com/stdlib-js/random-iter-randi/tree/umd
 
-[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn
+[@stdlib/random/iter/randn]: https://github.com/stdlib-js/random-iter-randn/tree/umd
 
-[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu
+[@stdlib/random/iter/randu]: https://github.com/stdlib-js/random-iter-randu/tree/umd
 
-[@stdlib/random/iter/rayleigh]: https://github.com/stdlib-js/random-iter-rayleigh
+[@stdlib/random/iter/rayleigh]: https://github.com/stdlib-js/random-iter-rayleigh/tree/umd
 
-[@stdlib/random/iter/t]: https://github.com/stdlib-js/random-iter-t
+[@stdlib/random/iter/t]: https://github.com/stdlib-js/random-iter-t/tree/umd
 
-[@stdlib/random/iter/triangular]: https://github.com/stdlib-js/random-iter-triangular
+[@stdlib/random/iter/triangular]: https://github.com/stdlib-js/random-iter-triangular/tree/umd
 
-[@stdlib/random/iter/uniform]: https://github.com/stdlib-js/random-iter-uniform
+[@stdlib/random/iter/uniform]: https://github.com/stdlib-js/random-iter-uniform/tree/umd
 
-[@stdlib/random/iter/weibull]: https://github.com/stdlib-js/random-iter-weibull
+[@stdlib/random/iter/weibull]: https://github.com/stdlib-js/random-iter-weibull/tree/umd
 
 <!-- </toc-links> -->
 
