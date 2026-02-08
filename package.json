@@ -143,7 +143,7 @@
     "@stdlib/random-base-uniform": "^0.2.2",
     "@stdlib/random-base-weibull": "^0.2.2",
     "@stdlib/stats-strided-mean": "^0.1.1",
-    "@stdlib/string-format": "^0.2.3",
+    "@stdlib/error-tools-fmtprodmsg": "^0.2.3",
     "@stdlib/symbol-iterator": "^0.2.3",
     "@stdlib/time-now": "^0.2.3",
     "@stdlib/utils-constant-function": "^0.2.3",
