@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-06-29)
+## Unreleased (2026-07-26)
 
 <section class="commits">
 
@@ -12,6 +12,7 @@
 
 <details>
 
+-   [`01a20c0`](https://github.com/stdlib-js/stdlib/commit/01a20c0a25103830414ec613971c0088fc65a2b6) - **style:** remove extraneous whitespace [(#13654)](https://github.com/stdlib-js/stdlib/pull/13654) _(by Philipp Burckhardt)_
 -   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
 -   [`49fc241`](https://github.com/stdlib-js/stdlib/commit/49fc2415618fdc746ce1bb16654e5d291fb6db85) - **docs:** fix `options.seed` duplicate and add missing `options.copy` tags in `random/iter` [(#11558)](https://github.com/stdlib-js/stdlib/pull/11558) _(by Philipp Burckhardt)_
 -   [`fddbb92`](https://github.com/stdlib-js/stdlib/commit/fddbb92925b8417c846356548ace38c51674a318) - **bench:** refactor to use string interpolation in `@stdlib/random-iter` [(#11424)](https://github.com/stdlib-js/stdlib/pull/11424) _(by Karan Anand)_
