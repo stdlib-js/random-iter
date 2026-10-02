@@ -85,6 +85,7 @@
     "@stdlib/assert-has-own-property": "^0.2.3",
     "@stdlib/assert-is-boolean": "^0.2.3",
     "@stdlib/assert-is-int32array": "^0.2.3",
+    "@stdlib/assert-is-integer": "^0.2.3",
     "@stdlib/assert-is-nonnegative-integer": "^0.2.3",
     "@stdlib/assert-is-number": "^0.2.3",
     "@stdlib/assert-is-plain-object": "^0.2.3",

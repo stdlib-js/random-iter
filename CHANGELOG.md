@@ -4,7 +4,17 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-08-17)
+## Unreleased (2026-10-02)
+
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`20f2bbe`](https://github.com/stdlib-js/stdlib/commit/20f2bbe30b227a3b17b5bfa509b2f014dbf18cbf) - update require path [(#15155)](https://github.com/stdlib-js/stdlib/pull/15155)
+
+</section>
+
+<!-- /.bug-fixes -->
 
 <section class="commits">
 
@@ -12,6 +22,8 @@
 
 <details>
 
+-   [`20f2bbe`](https://github.com/stdlib-js/stdlib/commit/20f2bbe30b227a3b17b5bfa509b2f014dbf18cbf) - **fix:** update require path [(#15155)](https://github.com/stdlib-js/stdlib/pull/15155) _(by Philipp Burckhardt)_
+-   [`2929ca7`](https://github.com/stdlib-js/stdlib/commit/2929ca7c5865a6e434ca51ae89873228d9ea6ee7) - **docs:** add missing throws annotation [(#14590)](https://github.com/stdlib-js/stdlib/pull/14590) _(by Philipp Burckhardt)_
 -   [`a103b47`](https://github.com/stdlib-js/stdlib/commit/a103b474ac08bc97bfdeac4674230abc02d17ae5) - **docs:** fix descriptions [(#13696)](https://github.com/stdlib-js/stdlib/pull/13696) _(by Philipp Burckhardt)_
 -   [`01a20c0`](https://github.com/stdlib-js/stdlib/commit/01a20c0a25103830414ec613971c0088fc65a2b6) - **style:** remove extraneous whitespace [(#13654)](https://github.com/stdlib-js/stdlib/pull/13654) _(by Philipp Burckhardt)_
 -   [`b603d47`](https://github.com/stdlib-js/stdlib/commit/b603d47b873c4c30fb25d3cb2368aafc21444d6b) - **test:** add missing closing brace in TypeScript test files [(#12718)](https://github.com/stdlib-js/stdlib/pull/12718) _(by Philipp Burckhardt)_
