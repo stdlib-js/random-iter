@@ -4,12 +4,13 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2026-10-02)
+## Unreleased (2026-11-19)
 
 <section class="bug-fixes">
 
 ### Bug Fixes
 
+-   [`fe9b0b9`](https://github.com/stdlib-js/stdlib/commit/fe9b0b98adf6106e4a7fe9e0f54afb718d4e5397) - update error message [(#15894)](https://github.com/stdlib-js/stdlib/pull/15894)
 -   [`20f2bbe`](https://github.com/stdlib-js/stdlib/commit/20f2bbe30b227a3b17b5bfa509b2f014dbf18cbf) - update require path [(#15155)](https://github.com/stdlib-js/stdlib/pull/15155)
 
 </section>
@@ -22,6 +23,7 @@
 
 <details>
 
+-   [`fe9b0b9`](https://github.com/stdlib-js/stdlib/commit/fe9b0b98adf6106e4a7fe9e0f54afb718d4e5397) - **fix:** update error message [(#15894)](https://github.com/stdlib-js/stdlib/pull/15894) _(by Philipp Burckhardt, Athan Reines)_
 -   [`20f2bbe`](https://github.com/stdlib-js/stdlib/commit/20f2bbe30b227a3b17b5bfa509b2f014dbf18cbf) - **fix:** update require path [(#15155)](https://github.com/stdlib-js/stdlib/pull/15155) _(by Philipp Burckhardt)_
 -   [`2929ca7`](https://github.com/stdlib-js/stdlib/commit/2929ca7c5865a6e434ca51ae89873228d9ea6ee7) - **docs:** add missing throws annotation [(#14590)](https://github.com/stdlib-js/stdlib/pull/14590) _(by Philipp Burckhardt)_
 -   [`a103b47`](https://github.com/stdlib-js/stdlib/commit/a103b474ac08bc97bfdeac4674230abc02d17ae5) - **docs:** fix descriptions [(#13696)](https://github.com/stdlib-js/stdlib/pull/13696) _(by Philipp Burckhardt)_
@@ -40,8 +42,9 @@
 
 ### Contributors
 
-A total of 2 people contributed to this release. Thank you to the following contributors:
+A total of 3 people contributed to this release. Thank you to the following contributors:
 
+-   Athan Reines
 -   Karan Anand
 -   Philipp Burckhardt
 
